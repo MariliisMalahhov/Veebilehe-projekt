@@ -1,0 +1,55 @@
+h1 {
+	font-style: italic;
+	color: blue;
+}
+
+body {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	font-family: verdana;
+	}
+
+div.Gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width:  100px;
+  height: 100px;
+  object-fit: cover;
+}
+div.Images {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto;
+	grid-gap: 10px;
+	row-gap: 100px;
+	background-color: #2196F3;
+	padding: 50px;
+}
+ 
+div.Images > div {
+	background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	padding: 10px 0;
+	font-size: 10px;
+}
+
+div.Gallery:hover {
+  border: 1px solid #777;
+}
+
+div.Gallery img {
+  width: 100%;
+  height: auto;
+}
+
+
+div.desc {
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* Siit alates kopeeritud JavaScript lehelt: https://codepen.io/ycw/pen/QVeYMP?__cf_chl_jschl_tk__=aad28bff13322e7de7327ed88d337a4be8f583fb-1605706668-0-AT7D-ctP9tfLiwAztuaBdpp95sKc75eT-3MGVefl2pKEFVG5IoEnMBCp43hvowbPr5QKnehA3qo4MzGKFIk39nLqHthGsZlkYzlu9BNbc-ZC_VMG-51WvIConnZZBGynOjELbtP-QgXqB8xwPvgH3GDZ20bu3sz67JF1c3scWjNVEJT-cQPh9sWK_CY0E5t0_FPzjk6Cupz5ZSD255kwCbr-v_WPjoJStVKhPlZQiJjQKR6L69mstRu5MyyEJYZhiyOZtgb0JhASxkyNB8ThmZCjZVWQXxhWDrnu7l6CJxOvnI5P8-SNMhI77oF4k_Lolq71w3flIooPniYL2h_F3AzoO3YqVP1favfOF0wvvkl5s3yCm96b5N6sW9KQR8FscQ */
+
