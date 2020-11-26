@@ -3,18 +3,20 @@
 <head>
     <link rel="stylesheet" href="GalleryStyle.css">
     <!--JavaScript from https://www.webhostingsecretrevealed.net/blog/featured-articles/15-cool-javascript-sample-snippets/-->
-    <script type="text/javascript">
-        writeRandomQuote = function () {
-          var quotes = new Array();
-          quotes[0] = "Ma ei mõtle muredest ja kannatustest, vaid ilust, mis ju ikkagi alles jääb. A.Frank";
-          quotes[1] = "“Every child is an artist. The problem is how to remain an artist once he grows up. P. Picasso";
-          quotes[2] = "Art is the lie that enables us to realize the truth. P. Picasso";
-          quotes[3] = "A painter should begin every canvas with a wash of black, because all things in nature are dark except where exposed by the light. Leonardo da Vinci";
-          var rand = Math.floor(Math.random()*quotes.length);
-          document.write(quotes[rand]);
-        }
-        writeRandomQuote();
-      </script>
+    <div class = "quotes">
+        <script type="text/javascript">
+            writeRandomQuote = function () {
+                var quotes = new Array();
+                quotes[0] = "Ma ei mõtle muredest ja kannatustest, vaid ilust, mis ju ikkagi alles jääb. A.Frank";
+                quotes[1] = "“Every child is an artist. The problem is how to remain an artist once he grows up. P. Picasso";
+                quotes[2] = "Art is the lie that enables us to realize the truth. P. Picasso";
+                quotes[3] = "A painter should begin every canvas with a wash of black, because all things in nature are dark except where exposed by the light. Leonardo da Vinci";
+                var rand = Math.floor(Math.random()*quotes.length);
+                document.write(quotes[rand]);
+            }
+            writeRandomQuote();
+        </script>
+    </div>
 </head>
 
 
@@ -149,7 +151,6 @@
     </div>
 </div>
 
-<script type="text/javascript">writeRandomQuote();</script> <!--JavaScript from https://www.webhostingsecretrevealed.net/blog/featured-articles/15-cool-javascript-sample-snippets/-->
 
 </body>
 </html>
