@@ -52,7 +52,7 @@ div.Images {
 	display: grid;
 	grid-template-columns: auto auto auto auto auto auto auto auto;
 	grid-gap: 10px;
-	row-gap: 100px;
+	row-gap: 170px;
 	background-color: aliceblue;
 	padding: 50px;
 
@@ -83,7 +83,8 @@ div.desc {
 
 
 div.Gallery:hover {
-  border: 1px solid #777;
+	border: 1px solid #777;
+	transform:scale(3);
 }
 
 
