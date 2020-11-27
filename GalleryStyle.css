@@ -1,18 +1,4 @@
 
-.quote {
-    font-family: Lucida Console;
-    font-size: 28px;
-    color: midnightblue;
-	text-align: center;
-}
-
-body {
-    background-image: url("Heleni_taustapilt.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .button {
     background-color: aliceblue;
     border: solid medium rgb(226, 43, 211);
@@ -30,16 +16,22 @@ body {
 }
 
 h1 {
-	color: blue;
+	color: #F0FFF0;
 	text-align: center;
 	font-size: 50px;
 }
 
+body {
+    background-image: url("Heleni_taustapilt.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 div.Gallery {
 	margin: 5px;
-	border: 1px solid #ccc;
+	#border: 1px solid #ccc;
 	float: left;
 	width:  100px;
 	height: 100px;
@@ -50,6 +42,12 @@ div.Gallery {
 	flex-direction:column;
 	font-family: verdana;
 }
+
+div.Gallery img {
+  width: 100%;
+  height: auto;
+}
+
 div.Images {
 	display: grid;
 	grid-template-columns: auto auto auto auto auto auto auto auto;
@@ -61,25 +59,31 @@ div.Images {
 }
  
 div.Images > div {
-	background-color: rgba(255, 255, 255, 0.8);
 	text-align: center;
-	padding: 10px 0;
 	font-size: 10px;
-}
-
-div.Gallery:hover {
-  border: 1px solid #777;
-}
-
-div.Gallery img {
-  width: 100%;
-  height: auto;
 }
 
 
 div.desc {
-  padding: 20px;
+  padding: 0px;
   text-align: center;
+  font-family: Arial;
+}
+
+
+.quote {
+    font-family: Lucida Console;
+    font-size: 28px;
+    color: midnightblue;
+	text-align: center;
+}
+
+
+
+
+
+div.Gallery:hover {
+  border: 1px solid #777;
 }
 
 
