@@ -16,6 +16,14 @@ p#nimi{
     font-weight: bold;
 }
 
-p#kontakt {
+p#kontakt_facebook {
+    text-align: center;
+}
+
+p#kontakt_instagram {
+    text-align: center;
+}
+
+p#kontakt_email {
     text-align: center;
 }
