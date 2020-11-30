@@ -1,166 +1,165 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="GalleryStyle.css">
-    <!--JavaScript from https://www.webhostingsecretrevealed.net/blog/featured-articles/15-cool-javascript-sample-snippets/-->
-    <div class = "quotes">
-        <script type="text/javascript">
-            writeRandomQuote = function () {
-                var quotes = new Array();
-                quotes[0] = "Ma ei mõtle muredest ja kannatustest, vaid ilust, mis ju ikkagi alles jääb. A.Frank";
-                quotes[1] = "Every child is an artist. The problem is how to remain an artist once he grows up. P. Picasso";
-                quotes[2] = "Art is the lie that enables us to realize the truth. P. Picasso";
-                quotes[3] = "A painter should begin every canvas with a wash of black, because all things in nature are dark except where exposed by the light. Leonardo da Vinci";
-                var rand = Math.floor(Math.random()*quotes.length);
-                document.write(quotes[rand]);
-            }
-            //writeRandomQuote();
-        </script>
-    </div>
-</head>
-
-
-
-
-<body>
-    <section>
-        <div>
-            <a class="button" href="">Avaleht</a>
-            <a class="button" href="">Galerii</a>
-            <a class="button" href="">Minust</a>
-            <a class="button" href="">Kontakt</a>
+    <head>
+        <meta charset="UTF-8">
+        <title>Galerii</title>
+        <link href="kodu.ut.ee/~kasutaja/GalleryStyle.css" rel="stylesheet">
+        <link href="kodu.ut.ee/~kasutaja/main_CSS.css" rel="stylesheet">
+        <!--JavaScript from https://www.webhostingsecretrevealed.net/blog/featured-articles/15-cool-javascript-sample-snippets/-->
+        <div class = "quotes">
+            <script>
+                writeRandomQuote = function () { //loon tsitaatide randomiseeritult esitamise funktsiooni
+                    var quotes = new Array(); //loon listi tsitaatidest
+                    quotes[0] = "Ma ei mõtle muredest ja kannatustest, vaid ilust, mis ju ikkagi alles jääb. A.Frank";
+                    quotes[1] = "Every child is an artist. The problem is how to remain an artist once he grows up. P. Picasso";
+                    quotes[2] = "Art is the lie that enables us to realize the truth. P. Picasso";
+                    quotes[3] = "A painter should begin every canvas with a wash of black, because all things in nature are dark except where exposed by the light. Leonardo da Vinci";
+                    var rand = Math.floor(Math.random()*quotes.length); //genereerib randomiseeritult arvu, mis ei ületa tsitaatide kogust
+                    document.write(quotes[rand]); //kirjutab ühe neljast tsitaatist
+                }
+                //writeRandomQuote();
+            </script>
         </div>
-    </section>
-<br>
+    </head>
+    <body>
+        <section>
+            <div>
+                <a class="button" href="kodu.ut.ee/~kasutaja/avaleht.html">Avaleht</a>
+                <a class="button" href="kodu.ut.ee/~kasutaja/gallery.html">Galerii</a>
+                <a class="button" href="kodu.ut.ee/~kasutaja/minust.html">Minust</a>
+                <a class="button" href="kodu.ut.ee/~kasutaja/kontakt.html">Kontakt</a>
+            </div>
+        </section>
+    <br>
 
-<h1>Galerii</h1>
-<br>
+    <h1>Galerii</h1>
+    <br>
 
-<div class = "Images">
-    <div class = "Gallery">
-        <a target="_blank" href = "https://db3pap005files.storage.live.com/y4meYjl415H0oVvcudSHK0aH2uFNPXlvxsMQ_lSLrVHaolIi1pcjY5O3_I30Gkuy-yCaCneLawXLwHUHPRYAuFU_d20aVhW__Z0XZn8FZzFG5fQmJw0FLKJc3iNLClgA65xlCG43156UEmXzqmo4XK2f5JYJZzpNMCuIj0617wYZXBBlWDtmgpz44PkqGXQtvspygFI2LWlTKpTMsmTrMyD7Q/S%C3%B5brap%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202020%20aasta.jpeg?psid=1&width=511&height=681">
-            <img id="myImg" src = "https://db3pap005files.storage.live.com/y4meYjl415H0oVvcudSHK0aH2uFNPXlvxsMQ_lSLrVHaolIi1pcjY5O3_I30Gkuy-yCaCneLawXLwHUHPRYAuFU_d20aVhW__Z0XZn8FZzFG5fQmJw0FLKJc3iNLClgA65xlCG43156UEmXzqmo4XK2f5JYJZzpNMCuIj0617wYZXBBlWDtmgpz44PkqGXQtvspygFI2LWlTKpTMsmTrMyD7Q/S%C3%B5brap%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202020%20aasta.jpeg?psid=1&width=511&height=681" alt="Valentine's Day card" style="width:100%;max-width:300px">
-        </a>
-        <div class = "desc">Sõbrapäevakaart värvipliiatsitega, 2020 aasta</div>
+    <div class = "Images">
+        <div class = "Gallery">
+            <a target="_blank" href = "https://db3pap005files.storage.live.com/y4meYjl415H0oVvcudSHK0aH2uFNPXlvxsMQ_lSLrVHaolIi1pcjY5O3_I30Gkuy-yCaCneLawXLwHUHPRYAuFU_d20aVhW__Z0XZn8FZzFG5fQmJw0FLKJc3iNLClgA65xlCG43156UEmXzqmo4XK2f5JYJZzpNMCuIj0617wYZXBBlWDtmgpz44PkqGXQtvspygFI2LWlTKpTMsmTrMyD7Q/S%C3%B5brap%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202020%20aasta.jpeg?psid=1&width=511&height=681">
+                <img id="myImg" src = "https://db3pap005files.storage.live.com/y4meYjl415H0oVvcudSHK0aH2uFNPXlvxsMQ_lSLrVHaolIi1pcjY5O3_I30Gkuy-yCaCneLawXLwHUHPRYAuFU_d20aVhW__Z0XZn8FZzFG5fQmJw0FLKJc3iNLClgA65xlCG43156UEmXzqmo4XK2f5JYJZzpNMCuIj0617wYZXBBlWDtmgpz44PkqGXQtvspygFI2LWlTKpTMsmTrMyD7Q/S%C3%B5brap%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202020%20aasta.jpeg?psid=1&width=511&height=681" alt="Valentine's Day card" style="width:100%;max-width:300px">
+            </a>
+            <div class = "desc">Sõbrapäevakaart värvipliiatsitega, 2020 aasta</div>
+        </div>
+
+        <div class = "Gallery">
+            <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mUhpBYw1sZ_xDsu3SFX9qnxfalDzTVgg-dEcf-z4ck6QYs82Xcsgl-vxHPgqj8Au1gx01WUACuwzhVFKupa-ZSZRmrbOScF-QeLCIa2eCGNindteKls5Yq1HCVf4rxCkdVYgQ0SKL6vIQCEl0rqKHzah8E6xrbozxnH8TPoNa5QASqlx2fx7Kh9aW-EbEd6aYgkGFMQnWjuQQLoViNFHVcw/S%C3%BCnnip%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202018%20aasta.jpeg?psid=1&width=511&height=681">
+                <img src= "https://db3pap005files.storage.live.com/y4mUhpBYw1sZ_xDsu3SFX9qnxfalDzTVgg-dEcf-z4ck6QYs82Xcsgl-vxHPgqj8Au1gx01WUACuwzhVFKupa-ZSZRmrbOScF-QeLCIa2eCGNindteKls5Yq1HCVf4rxCkdVYgQ0SKL6vIQCEl0rqKHzah8E6xrbozxnH8TPoNa5QASqlx2fx7Kh9aW-EbEd6aYgkGFMQnWjuQQLoViNFHVcw/S%C3%BCnnip%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202018%20aasta.jpeg?psid=1&width=511&height=681" alt="Birthday card">
+            </a>
+            <div class = "desc">Sünnipäevakaart värvipliiatsitega, 2018 aasta</div>
+        </div>
+
+        <div class = "Gallery">
+            <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mPD9aZBi0ktkk5yRQK6aRT6496zp6bW4JevNrPLlEpjwXZGH-ry99o16xLdvJmx3rtPxVg9PGRu3MW3jdAHEs7v3pg3Iu5bxwaYPb8nM-jKRTX7tlCar_kUEU4h81lu4mqyZrJ_kX6aLd9tSD2_nWjcXCHbPQcmkT2X5XSARasCSY4cnzlAd_l-nC7QKsv1KO55KAwUMldNHaBCScKG06Dw/S%C3%BCnnip%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202019%20aasta.jpeg?psid=1&width=511&height=681">
+                <img src= "https://db3pap005files.storage.live.com/y4mPD9aZBi0ktkk5yRQK6aRT6496zp6bW4JevNrPLlEpjwXZGH-ry99o16xLdvJmx3rtPxVg9PGRu3MW3jdAHEs7v3pg3Iu5bxwaYPb8nM-jKRTX7tlCar_kUEU4h81lu4mqyZrJ_kX6aLd9tSD2_nWjcXCHbPQcmkT2X5XSARasCSY4cnzlAd_l-nC7QKsv1KO55KAwUMldNHaBCScKG06Dw/S%C3%BCnnip%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202019%20aasta.jpeg?psid=1&width=511&height=681" alt="Birthday card">
+            </a>
+            <div class = "desc">Sünnipäevakaart värvipliiatsitega, 2019 aasta</div>
+        </div>
+
+        <div class = "Gallery">
+            <a target="_blank" href = "https://db3pap005files.storage.live.com/y4m11JRjcy92dg5dqGSF1ksuxKHmoRlQXbpOEQab3PzeX73FkHxga8c9ggaPQJTH4BXY9KUVokZmRYeE0fjkH1wijN65PXj0E_kR8vmc9HBTRluZVp7Wxxbzpk7Fy9jQg4apgRzRa4RyLnt43BGrIP3twxXRcevoiL3B2nXpq1r-sJFwxVzcTXZnsNFNZqwGNg_MOi3TBAKh2xZVyDJsOT-RQ/S%C3%BCnnip%C3%A4evakaart%20vesiv%C3%A4rvidega%2C%202020%20aasta.jpeg?psid=1&width=511&height=681">
+                <img src= "https://db3pap005files.storage.live.com/y4m11JRjcy92dg5dqGSF1ksuxKHmoRlQXbpOEQab3PzeX73FkHxga8c9ggaPQJTH4BXY9KUVokZmRYeE0fjkH1wijN65PXj0E_kR8vmc9HBTRluZVp7Wxxbzpk7Fy9jQg4apgRzRa4RyLnt43BGrIP3twxXRcevoiL3B2nXpq1r-sJFwxVzcTXZnsNFNZqwGNg_MOi3TBAKh2xZVyDJsOT-RQ/S%C3%BCnnip%C3%A4evakaart%20vesiv%C3%A4rvidega%2C%202020%20aasta.jpeg?psid=1&width=511&height=681" alt="Birthday card">
+            </a>
+            <div class = "desc">Sünnipäevakaart vesivärvidega, 2020 aasta</div>
+        </div>
+
+        <div class = "Gallery">
+            <a target="_blank" href = "https://db3pap005files.storage.live.com/y4msHh7pfZVONz4DciMNJgu8i2vTKc17wiUKmlIk_D_Tdbkoznb_4mXALKFlljZpRY_JWbnsrpM8WaI3reLAwX60lDugNI18LV0KTHLWJ4s_hMh4xB45zyIKC-k034M7zqVpKPtuQyWnTgeF34LjYSu31kFJ00DVIifxvuCrCVlYV2T67BHuqGo-82NAMG_-wjsSZGfCu1_ll5TOYQOkKDu3w/S%C3%BCnnip%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202020%20aasta.jpg?psid=1&width=545&height=681">
+                <img src= "https://db3pap005files.storage.live.com/y4msHh7pfZVONz4DciMNJgu8i2vTKc17wiUKmlIk_D_Tdbkoznb_4mXALKFlljZpRY_JWbnsrpM8WaI3reLAwX60lDugNI18LV0KTHLWJ4s_hMh4xB45zyIKC-k034M7zqVpKPtuQyWnTgeF34LjYSu31kFJ00DVIifxvuCrCVlYV2T67BHuqGo-82NAMG_-wjsSZGfCu1_ll5TOYQOkKDu3w/S%C3%BCnnip%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202020%20aasta.jpg?psid=1&width=545&height=681" alt="Birthday card">
+            </a>
+            <div class = "desc">Sünnipäevakaart värvipliiatsitega, 2020 aasta</div>
+        </div>
+
+        <div class = "Gallery">
+            <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mBQADcdM_s1-CFf1EM7NIzFnKAv6r2P08WOBfzmBh-n1hIzI7sM5-wwQwLDx8YXIAQug3WYyUrsPKHl9xnKAD6LNGsKJsSvX6LD_ExaU6Zta8AFzpHykMynGNrDNPatodq5wLE4lF3CCf-01qfOh5p9dSPwWduxBXaag0VS8uF2ZnA9wEnwJiIzT2gahOcgAoU6yrh_wkMY1irFnbp-pjrw/Joonistus%20iseendast%20anime%20stiilis%2C%202020%20aasta.jpg?psid=1&width=545&height=681">
+                <img src= "https://db3pap005files.storage.live.com/y4mBQADcdM_s1-CFf1EM7NIzFnKAv6r2P08WOBfzmBh-n1hIzI7sM5-wwQwLDx8YXIAQug3WYyUrsPKHl9xnKAD6LNGsKJsSvX6LD_ExaU6Zta8AFzpHykMynGNrDNPatodq5wLE4lF3CCf-01qfOh5p9dSPwWduxBXaag0VS8uF2ZnA9wEnwJiIzT2gahOcgAoU6yrh_wkMY1irFnbp-pjrw/Joonistus%20iseendast%20anime%20stiilis%2C%202020%20aasta.jpg?psid=1&width=545&height=681" alt="Drawing of the author in anime style">
+            </a>
+            <div class = "desc">Joonistus iseendast anime stiilis, 2020 aasta</div>
+        </div>
+
+        <div class = "Gallery">
+            <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mYYeuCsArACbkTXNaxyLXl9Pq6rznLI0Og-_8JyJh4vibESamCRFoOz-AUnlpJlGd-WUkZKlxwX6oJpN1KMGxbY3F9AZm11eHszPP9vUhAWSLV5WAZxyH2pckvnyS-KKRrCgXvOqvoUBs2SzkKkhTumjxXDWorr3DKyVi7SS5NSrax0fViwKvBC98_JHAqbjIb4ToOQEBywiCv0z2flHXeQ/Digitaalne%20joonistus%20iseendast%2C%202020%20aasta.jpg?psid=1&width=681&height=681&cropMode=center">
+                <img src= "https://db3pap005files.storage.live.com/y4mYYeuCsArACbkTXNaxyLXl9Pq6rznLI0Og-_8JyJh4vibESamCRFoOz-AUnlpJlGd-WUkZKlxwX6oJpN1KMGxbY3F9AZm11eHszPP9vUhAWSLV5WAZxyH2pckvnyS-KKRrCgXvOqvoUBs2SzkKkhTumjxXDWorr3DKyVi7SS5NSrax0fViwKvBC98_JHAqbjIb4ToOQEBywiCv0z2flHXeQ/Digitaalne%20joonistus%20iseendast%2C%202020%20aasta.jpg?psid=1&width=681&height=681&cropMode=center" alt="Digital drawing of the author">
+            </a>
+            <div class = "desc">Digitaalne joonistus iseendast, 2020 aasta</div>
+        </div>
+
+
+        <div class = "Gallery">
+            <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mr1Ol3znCp8FXScFDLnMVl-d89wfPgo_-md6yAGPsLhbOMUk_3YzfsilJbS8OeG_dHqQJD0QLy1XN2CpqMIbl45PjlbuOfB6FD2zdgO9vav4GuVsJkn7vvnXu3uOHicHkSlsFcwb5PtZ5uziTaOZbge2wQubREqrnh2eqE1EFUEeyqhjk3ugKSh-Frun5QAKehuai5FwV289LQ2TQOAAgNg/Pilt%20klassi%C3%B5est%2C%202020%20aasta.jpg?psid=1&width=663&height=681">
+                <img src= "https://db3pap005files.storage.live.com/y4mr1Ol3znCp8FXScFDLnMVl-d89wfPgo_-md6yAGPsLhbOMUk_3YzfsilJbS8OeG_dHqQJD0QLy1XN2CpqMIbl45PjlbuOfB6FD2zdgO9vav4GuVsJkn7vvnXu3uOHicHkSlsFcwb5PtZ5uziTaOZbge2wQubREqrnh2eqE1EFUEeyqhjk3ugKSh-Frun5QAKehuai5FwV289LQ2TQOAAgNg/Pilt%20klassi%C3%B5est%2C%202020%20aasta.jpg?psid=1&width=663&height=681" alt="A picture of classmate">
+            </a>
+            <div class = "desc">Pilt klassiõest, 2020 aasta</div>
+        </div>
+
+        <div class = "Gallery">
+            <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mzKrIDVC6NywNHk0xDzymgt3suhk3zCGWBX_znItfZiU5uLJ5oa-eUNtDMs_u6-9ObEA7hFWSnEB01iHuvJXEykM-lEJbt7BMV3-u1bK7hW0yv1hC6T9Uhefn5IDXPmn5MytEjkou2eBWIb8rotEYT3zqRwTsKCRzbJFtevZ6CyS2iTiYwRcojVgkvRjEF5IVKi-jnWFZSXTlVQnSG7Hr7g/Pilt%20s%C3%B5brannale%2C%202018%20aasta.jpg?psid=1&width=681&height=681&cropMode=center">
+                <img src= "https://db3pap005files.storage.live.com/y4mzKrIDVC6NywNHk0xDzymgt3suhk3zCGWBX_znItfZiU5uLJ5oa-eUNtDMs_u6-9ObEA7hFWSnEB01iHuvJXEykM-lEJbt7BMV3-u1bK7hW0yv1hC6T9Uhefn5IDXPmn5MytEjkou2eBWIb8rotEYT3zqRwTsKCRzbJFtevZ6CyS2iTiYwRcojVgkvRjEF5IVKi-jnWFZSXTlVQnSG7Hr7g/Pilt%20s%C3%B5brannale%2C%202018%20aasta.jpg?psid=1&width=681&height=681&cropMode=center" alt="A picture for a friend">
+            </a>
+            <div class = "desc">Pilt sõbrannale, 2018 aasta</div>
+        </div>
+
+        <div class = "Gallery">
+            <a target="_blank" href = "https://db3pap005files.storage.live.com/y4m9iWW6-ZIJZP-641fFd_nIg_0uvCXCD0wfs-sK1AF5zi9bp6Ok8u6fDZ4C-gl5Y0XYgzKOc0jJx-4d0-fTdGQEUkqiqxtTWxhon1PaAg9usrDBv8c41BFzKKEbl9TO9zlAvGu4jeEryhWhE4sCUeCDLhAEbuwBynqrQ-grRmuzXIzvgSmu26_oUCJR-xfw8uOegwBcUqzjc22Mw8Ve0NZSA/Pilt%20s%C3%B5brannale%2C%202019%20aasta.jpg?psid=1&width=704&height=681">
+                <img src= "https://db3pap005files.storage.live.com/y4m9iWW6-ZIJZP-641fFd_nIg_0uvCXCD0wfs-sK1AF5zi9bp6Ok8u6fDZ4C-gl5Y0XYgzKOc0jJx-4d0-fTdGQEUkqiqxtTWxhon1PaAg9usrDBv8c41BFzKKEbl9TO9zlAvGu4jeEryhWhE4sCUeCDLhAEbuwBynqrQ-grRmuzXIzvgSmu26_oUCJR-xfw8uOegwBcUqzjc22Mw8Ve0NZSA/Pilt%20s%C3%B5brannale%2C%202019%20aasta.jpg?psid=1&width=704&height=681" alt="A picture for a friend">
+            </a>
+            <div class = "desc">Pilt sõbrannale, 2019 aasta</div>
+        </div>
+
+
+
+        <div class = "Gallery">
+            <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mXJi2iZZFwqP8KbNDCOgsgyTlFiTx6fI-T_h6EjAmtlV8q0MDCD5Z6t9VZew426iVoE3ucs_ioqYw3Ld5kfyiNKiwRkGUnYYPEfrEzXL1BwEqCiSmvkdCjr4WOYS4WRHcoEJ0BSQ-giwMBvOrwdaXQ1w8akHq07Xkg8moHXW5fDlGrZTmse6SrZBkzRioI3-fXjV6Z98mqDtN0act2HUxRA/S%C3%BCnnip%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202020%20august.jpg?psid=1&width=980&height=766">
+                <img src= "https://db3pap005files.storage.live.com/y4mXJi2iZZFwqP8KbNDCOgsgyTlFiTx6fI-T_h6EjAmtlV8q0MDCD5Z6t9VZew426iVoE3ucs_ioqYw3Ld5kfyiNKiwRkGUnYYPEfrEzXL1BwEqCiSmvkdCjr4WOYS4WRHcoEJ0BSQ-giwMBvOrwdaXQ1w8akHq07Xkg8moHXW5fDlGrZTmse6SrZBkzRioI3-fXjV6Z98mqDtN0act2HUxRA/S%C3%BCnnip%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202020%20august.jpg?psid=1&width=980&height=766" alt="Birthday card">
+            </a>
+            <div class = "desc">Sünnipäevakaart värvipliiatsitega, 2020 august</div>
+        </div>
+
+        <div class = "Gallery">
+            <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mTzsD0l6YiAZTPh1MD_q9TDYIV5BosA4GDMLkn-HE65y7RFyt42qQ8uO6FioSYV0CfDRkJvpydPV1Ecg0qqiPApDvQ998v6o3iJcOV1jPn1-sNSVvSZ7SkDdbs-mQCCOO-wkL4UoIqyvTxhSYD31Okt7M_hXYviywlRG7lMiQC29IKy7kiLPh_W4x4t06NXRZ4GarQ8plvziAp50AI_9AYg/S%C3%BCnnip%C3%A4evakaart%20vesiv%C3%A4rvidega%2C%202020%20juuli.jpg?psid=1&width=766&height=766&cropMode=center">
+                <img src= "https://db3pap005files.storage.live.com/y4mTzsD0l6YiAZTPh1MD_q9TDYIV5BosA4GDMLkn-HE65y7RFyt42qQ8uO6FioSYV0CfDRkJvpydPV1Ecg0qqiPApDvQ998v6o3iJcOV1jPn1-sNSVvSZ7SkDdbs-mQCCOO-wkL4UoIqyvTxhSYD31Okt7M_hXYviywlRG7lMiQC29IKy7kiLPh_W4x4t06NXRZ4GarQ8plvziAp50AI_9AYg/S%C3%BCnnip%C3%A4evakaart%20vesiv%C3%A4rvidega%2C%202020%20juuli.jpg?psid=1&width=766&height=766&cropMode=center" alt="Birthday card">
+            </a>
+            <div class = "desc">Sünnipäevakaart vesivärvidega, 2020 juuli</div>
+        </div>
+
+        <div class = "Gallery">
+            <a target="_blank" href = "https://db3pap005files.storage.live.com/y4muVlZsfg1vsigWlTvGuxYyE-T0tZiQOW32MqxjbIafVhJury_GGcFhEAtvhxLDHYNNxpNwGZyOcxbUtBV3LcqgJqdfgVYzK70HP__zqJxntoFNFZnPBdSWZl-p2WHgRyRi9tH_28ULJkp2elLXZ4WSrlZcc5qJrnKNbtPF0e7JmLe6glfSXq5IUatJjtWF-BLw5lZBZxMciXquxwrDNlkxA/Vesiv%C3%A4rvidega%20tehtud%20pilt%20s%C3%B5brast%2C%202020%20aasta.jpg?psid=1&width=766&height=766&cropMode=center">
+                <img src= "https://db3pap005files.storage.live.com/y4muVlZsfg1vsigWlTvGuxYyE-T0tZiQOW32MqxjbIafVhJury_GGcFhEAtvhxLDHYNNxpNwGZyOcxbUtBV3LcqgJqdfgVYzK70HP__zqJxntoFNFZnPBdSWZl-p2WHgRyRi9tH_28ULJkp2elLXZ4WSrlZcc5qJrnKNbtPF0e7JmLe6glfSXq5IUatJjtWF-BLw5lZBZxMciXquxwrDNlkxA/Vesiv%C3%A4rvidega%20tehtud%20pilt%20s%C3%B5brast%2C%202020%20aasta.jpg?psid=1&width=766&height=766&cropMode=center" alt="A picture of a friend">
+            </a>
+            <div class = "desc">Vesivärvidega tehtud pilt sõbrast, 2020 aasta</div>
+        </div>
+
+
+        <div class = "Gallery">
+            <a target="_blank" href = "https://db3pap005files.storage.live.com/y4m2_x-2NMmDyDJ0MG5eriM-c78T-9DNL4rU4r-rLLsRH5n6nHtvaC9QPkMwdzW770bLEYCnBhcdt9XLZYb3qGrpMlZdye5OOoBdc7IcHMsnZkvfAs69ZN1pw9YdlqAWsfZf2n2VhxO17kBT6vKXeSwL1QSlCgEQkqxDpty30l1YlYFEqimtFU6cHuCN1M3pebvKtc5PMryvnOOHQGHXQrvcw/Vesiv%C3%A4rvimaal%20Kuressaare%20lossihoovist%2C%202020%20aasta.jpg?psid=1&width=967&height=725">
+                <img src= "https://db3pap005files.storage.live.com/y4m2_x-2NMmDyDJ0MG5eriM-c78T-9DNL4rU4r-rLLsRH5n6nHtvaC9QPkMwdzW770bLEYCnBhcdt9XLZYb3qGrpMlZdye5OOoBdc7IcHMsnZkvfAs69ZN1pw9YdlqAWsfZf2n2VhxO17kBT6vKXeSwL1QSlCgEQkqxDpty30l1YlYFEqimtFU6cHuCN1M3pebvKtc5PMryvnOOHQGHXQrvcw/Vesiv%C3%A4rvimaal%20Kuressaare%20lossihoovist%2C%202020%20aasta.jpg?psid=1&width=967&height=725" alt="A painting of the yard of Kuressaare Castle">
+            </a>
+            <div class = "desc">Vesivärvimaal Kuressaare lossihoovist, 2020 aasta</div>
+        </div>
+
+        <div class = "Gallery">
+            <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mTdME1Q5pdg2oz5Cd28-QCHvqMo8h9dWAiLb_C6kNypJ7WcFTzaGXO5OxaYw4fHdHzX8DaQZWTSz46vBSFggQP8Jm-oCXoyRzAVSCx3jHcIy36KJGHDnFacNjxjH4oO45TinvGr9bEaig8KVDlBu_fB-zAyNvEjiCl0jdDKjum4Eu7mt1lkoLQfHrW8GBCX-rFESpA5eVk9DXDAkgIFDpew/Vesiv%C3%A4rvimaal%20mere%20%C3%A4%C3%A4res%2C%202020%20aasta.jpg?psid=1&width=1018&height=766">
+                <img src= "https://db3pap005files.storage.live.com/y4mTdME1Q5pdg2oz5Cd28-QCHvqMo8h9dWAiLb_C6kNypJ7WcFTzaGXO5OxaYw4fHdHzX8DaQZWTSz46vBSFggQP8Jm-oCXoyRzAVSCx3jHcIy36KJGHDnFacNjxjH4oO45TinvGr9bEaig8KVDlBu_fB-zAyNvEjiCl0jdDKjum4Eu7mt1lkoLQfHrW8GBCX-rFESpA5eVk9DXDAkgIFDpew/Vesiv%C3%A4rvimaal%20mere%20%C3%A4%C3%A4res%2C%202020%20aasta.jpg?psid=1&width=1018&height=766" alt="A painting on the seashore">
+            </a>
+            <div class = "desc">Vesivärvimaal mere ääres, 2020 aasta</div>
+        </div>
+
+        <div class = "Gallery">
+            <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mEm9moj3YgCjJcl3sbC5SOJqYqAGN_Asm7sWFxnghrfCvU5TZ6TX-Ob6W16fgEggjWoWMmHJXbAgYH7CVQGxLozZIDvEbsIpMN5UWAACGJgfd1G2sFK6yD38EiRE6BIxuSErFd7NKNgOZkRuWbLOTqc8k4IgofL94NWvQA7qTNbH5w1MLMc0j1YUnEXbRksQi6otM46Hk_6yaTpxZu069IQ/Akr%C3%BC%C3%BClv%C3%A4rvidega%20maalitud%20lilled%2C%202020%20aasta.jpg?psid=1&width=1211&height=681">
+                <img src= "https://db3pap005files.storage.live.com/y4mEm9moj3YgCjJcl3sbC5SOJqYqAGN_Asm7sWFxnghrfCvU5TZ6TX-Ob6W16fgEggjWoWMmHJXbAgYH7CVQGxLozZIDvEbsIpMN5UWAACGJgfd1G2sFK6yD38EiRE6BIxuSErFd7NKNgOZkRuWbLOTqc8k4IgofL94NWvQA7qTNbH5w1MLMc0j1YUnEXbRksQi6otM46Hk_6yaTpxZu069IQ/Akr%C3%BC%C3%BClv%C3%A4rvidega%20maalitud%20lilled%2C%202020%20aasta.jpg?psid=1&width=1211&height=681" alt="Painting of flowers">
+            </a>
+            <div class = "desc">Akrüülvärvidega maalitud lilled, 2020 aasta</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class = "quote">
+    <script>
+        writeRandomQuote(); //rakendab JavaScripti koodi 
+    </script>
     </div>
 
-    <div class = "Gallery">
-        <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mUhpBYw1sZ_xDsu3SFX9qnxfalDzTVgg-dEcf-z4ck6QYs82Xcsgl-vxHPgqj8Au1gx01WUACuwzhVFKupa-ZSZRmrbOScF-QeLCIa2eCGNindteKls5Yq1HCVf4rxCkdVYgQ0SKL6vIQCEl0rqKHzah8E6xrbozxnH8TPoNa5QASqlx2fx7Kh9aW-EbEd6aYgkGFMQnWjuQQLoViNFHVcw/S%C3%BCnnip%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202018%20aasta.jpeg?psid=1&width=511&height=681">
-            <img src= "https://db3pap005files.storage.live.com/y4mUhpBYw1sZ_xDsu3SFX9qnxfalDzTVgg-dEcf-z4ck6QYs82Xcsgl-vxHPgqj8Au1gx01WUACuwzhVFKupa-ZSZRmrbOScF-QeLCIa2eCGNindteKls5Yq1HCVf4rxCkdVYgQ0SKL6vIQCEl0rqKHzah8E6xrbozxnH8TPoNa5QASqlx2fx7Kh9aW-EbEd6aYgkGFMQnWjuQQLoViNFHVcw/S%C3%BCnnip%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202018%20aasta.jpeg?psid=1&width=511&height=681" alt="Birthday card">
-        </a>
-        <div class = "desc">Sünnipäevakaart värvipliiatsitega, 2018 aasta</div>
-    </div>
-
-    <div class = "Gallery">
-        <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mPD9aZBi0ktkk5yRQK6aRT6496zp6bW4JevNrPLlEpjwXZGH-ry99o16xLdvJmx3rtPxVg9PGRu3MW3jdAHEs7v3pg3Iu5bxwaYPb8nM-jKRTX7tlCar_kUEU4h81lu4mqyZrJ_kX6aLd9tSD2_nWjcXCHbPQcmkT2X5XSARasCSY4cnzlAd_l-nC7QKsv1KO55KAwUMldNHaBCScKG06Dw/S%C3%BCnnip%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202019%20aasta.jpeg?psid=1&width=511&height=681" width="600" height="400">
-            <img src= "https://db3pap005files.storage.live.com/y4mPD9aZBi0ktkk5yRQK6aRT6496zp6bW4JevNrPLlEpjwXZGH-ry99o16xLdvJmx3rtPxVg9PGRu3MW3jdAHEs7v3pg3Iu5bxwaYPb8nM-jKRTX7tlCar_kUEU4h81lu4mqyZrJ_kX6aLd9tSD2_nWjcXCHbPQcmkT2X5XSARasCSY4cnzlAd_l-nC7QKsv1KO55KAwUMldNHaBCScKG06Dw/S%C3%BCnnip%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202019%20aasta.jpeg?psid=1&width=511&height=681" alt="Birthday card">
-        </a>
-        <div class = "desc">Sünnipäevakaart värvipliiatsitega, 2019 aasta</div>
-    </div>
-
-    <div class = "Gallery">
-        <a target="_blank" href = "https://db3pap005files.storage.live.com/y4m11JRjcy92dg5dqGSF1ksuxKHmoRlQXbpOEQab3PzeX73FkHxga8c9ggaPQJTH4BXY9KUVokZmRYeE0fjkH1wijN65PXj0E_kR8vmc9HBTRluZVp7Wxxbzpk7Fy9jQg4apgRzRa4RyLnt43BGrIP3twxXRcevoiL3B2nXpq1r-sJFwxVzcTXZnsNFNZqwGNg_MOi3TBAKh2xZVyDJsOT-RQ/S%C3%BCnnip%C3%A4evakaart%20vesiv%C3%A4rvidega%2C%202020%20aasta.jpeg?psid=1&width=511&height=681" width="600" height="400">
-            <img src= "https://db3pap005files.storage.live.com/y4m11JRjcy92dg5dqGSF1ksuxKHmoRlQXbpOEQab3PzeX73FkHxga8c9ggaPQJTH4BXY9KUVokZmRYeE0fjkH1wijN65PXj0E_kR8vmc9HBTRluZVp7Wxxbzpk7Fy9jQg4apgRzRa4RyLnt43BGrIP3twxXRcevoiL3B2nXpq1r-sJFwxVzcTXZnsNFNZqwGNg_MOi3TBAKh2xZVyDJsOT-RQ/S%C3%BCnnip%C3%A4evakaart%20vesiv%C3%A4rvidega%2C%202020%20aasta.jpeg?psid=1&width=511&height=681" alt="Birthday card">
-        </a>
-        <div class = "desc">Sünnipäevakaart vesivärvidega, 2020 aasta</div>
-    </div>
-
-    <div class = "Gallery">
-        <a target="_blank" href = "https://db3pap005files.storage.live.com/y4msHh7pfZVONz4DciMNJgu8i2vTKc17wiUKmlIk_D_Tdbkoznb_4mXALKFlljZpRY_JWbnsrpM8WaI3reLAwX60lDugNI18LV0KTHLWJ4s_hMh4xB45zyIKC-k034M7zqVpKPtuQyWnTgeF34LjYSu31kFJ00DVIifxvuCrCVlYV2T67BHuqGo-82NAMG_-wjsSZGfCu1_ll5TOYQOkKDu3w/S%C3%BCnnip%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202020%20aasta.jpg?psid=1&width=545&height=681" width="600" height="400">
-            <img src= "https://db3pap005files.storage.live.com/y4msHh7pfZVONz4DciMNJgu8i2vTKc17wiUKmlIk_D_Tdbkoznb_4mXALKFlljZpRY_JWbnsrpM8WaI3reLAwX60lDugNI18LV0KTHLWJ4s_hMh4xB45zyIKC-k034M7zqVpKPtuQyWnTgeF34LjYSu31kFJ00DVIifxvuCrCVlYV2T67BHuqGo-82NAMG_-wjsSZGfCu1_ll5TOYQOkKDu3w/S%C3%BCnnip%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202020%20aasta.jpg?psid=1&width=545&height=681" alt="Birthday card">
-        </a>
-        <div class = "desc">Sünnipäevakaart värvipliiatsitega, 2020 aasta</div>
-    </div>
-
-    <div class = "Gallery">
-        <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mBQADcdM_s1-CFf1EM7NIzFnKAv6r2P08WOBfzmBh-n1hIzI7sM5-wwQwLDx8YXIAQug3WYyUrsPKHl9xnKAD6LNGsKJsSvX6LD_ExaU6Zta8AFzpHykMynGNrDNPatodq5wLE4lF3CCf-01qfOh5p9dSPwWduxBXaag0VS8uF2ZnA9wEnwJiIzT2gahOcgAoU6yrh_wkMY1irFnbp-pjrw/Joonistus%20iseendast%20anime%20stiilis%2C%202020%20aasta.jpg?psid=1&width=545&height=681" width="600" height="400">
-            <img src= "https://db3pap005files.storage.live.com/y4mBQADcdM_s1-CFf1EM7NIzFnKAv6r2P08WOBfzmBh-n1hIzI7sM5-wwQwLDx8YXIAQug3WYyUrsPKHl9xnKAD6LNGsKJsSvX6LD_ExaU6Zta8AFzpHykMynGNrDNPatodq5wLE4lF3CCf-01qfOh5p9dSPwWduxBXaag0VS8uF2ZnA9wEnwJiIzT2gahOcgAoU6yrh_wkMY1irFnbp-pjrw/Joonistus%20iseendast%20anime%20stiilis%2C%202020%20aasta.jpg?psid=1&width=545&height=681" alt="Drawing of the author in anime style">
-        </a>
-        <div class = "desc">Joonistus iseendast anime stiilis, 2020 aasta</div>
-    </div>
-
-    <div class = "Gallery">
-        <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mYYeuCsArACbkTXNaxyLXl9Pq6rznLI0Og-_8JyJh4vibESamCRFoOz-AUnlpJlGd-WUkZKlxwX6oJpN1KMGxbY3F9AZm11eHszPP9vUhAWSLV5WAZxyH2pckvnyS-KKRrCgXvOqvoUBs2SzkKkhTumjxXDWorr3DKyVi7SS5NSrax0fViwKvBC98_JHAqbjIb4ToOQEBywiCv0z2flHXeQ/Digitaalne%20joonistus%20iseendast%2C%202020%20aasta.jpg?psid=1&width=681&height=681&cropMode=center" width="600" height="400">
-            <img src= "https://db3pap005files.storage.live.com/y4mYYeuCsArACbkTXNaxyLXl9Pq6rznLI0Og-_8JyJh4vibESamCRFoOz-AUnlpJlGd-WUkZKlxwX6oJpN1KMGxbY3F9AZm11eHszPP9vUhAWSLV5WAZxyH2pckvnyS-KKRrCgXvOqvoUBs2SzkKkhTumjxXDWorr3DKyVi7SS5NSrax0fViwKvBC98_JHAqbjIb4ToOQEBywiCv0z2flHXeQ/Digitaalne%20joonistus%20iseendast%2C%202020%20aasta.jpg?psid=1&width=681&height=681&cropMode=center" alt="Digital drawing of the author">
-        </a>
-        <div class = "desc">Digitaalne joonistus iseendast, 2020 aasta</div>
-    </div>
-
-
-    <div class = "Gallery">
-        <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mr1Ol3znCp8FXScFDLnMVl-d89wfPgo_-md6yAGPsLhbOMUk_3YzfsilJbS8OeG_dHqQJD0QLy1XN2CpqMIbl45PjlbuOfB6FD2zdgO9vav4GuVsJkn7vvnXu3uOHicHkSlsFcwb5PtZ5uziTaOZbge2wQubREqrnh2eqE1EFUEeyqhjk3ugKSh-Frun5QAKehuai5FwV289LQ2TQOAAgNg/Pilt%20klassi%C3%B5est%2C%202020%20aasta.jpg?psid=1&width=663&height=681" width="600" height="400">
-            <img src= "https://db3pap005files.storage.live.com/y4mr1Ol3znCp8FXScFDLnMVl-d89wfPgo_-md6yAGPsLhbOMUk_3YzfsilJbS8OeG_dHqQJD0QLy1XN2CpqMIbl45PjlbuOfB6FD2zdgO9vav4GuVsJkn7vvnXu3uOHicHkSlsFcwb5PtZ5uziTaOZbge2wQubREqrnh2eqE1EFUEeyqhjk3ugKSh-Frun5QAKehuai5FwV289LQ2TQOAAgNg/Pilt%20klassi%C3%B5est%2C%202020%20aasta.jpg?psid=1&width=663&height=681" alt="A picture of classmate">
-        </a>
-        <div class = "desc">Pilt klassiõest, 2020 aasta</div>
-    </div>
-
-    <div class = "Gallery">
-        <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mzKrIDVC6NywNHk0xDzymgt3suhk3zCGWBX_znItfZiU5uLJ5oa-eUNtDMs_u6-9ObEA7hFWSnEB01iHuvJXEykM-lEJbt7BMV3-u1bK7hW0yv1hC6T9Uhefn5IDXPmn5MytEjkou2eBWIb8rotEYT3zqRwTsKCRzbJFtevZ6CyS2iTiYwRcojVgkvRjEF5IVKi-jnWFZSXTlVQnSG7Hr7g/Pilt%20s%C3%B5brannale%2C%202018%20aasta.jpg?psid=1&width=681&height=681&cropMode=center" width="600" height="400">
-            <img src= "https://db3pap005files.storage.live.com/y4mzKrIDVC6NywNHk0xDzymgt3suhk3zCGWBX_znItfZiU5uLJ5oa-eUNtDMs_u6-9ObEA7hFWSnEB01iHuvJXEykM-lEJbt7BMV3-u1bK7hW0yv1hC6T9Uhefn5IDXPmn5MytEjkou2eBWIb8rotEYT3zqRwTsKCRzbJFtevZ6CyS2iTiYwRcojVgkvRjEF5IVKi-jnWFZSXTlVQnSG7Hr7g/Pilt%20s%C3%B5brannale%2C%202018%20aasta.jpg?psid=1&width=681&height=681&cropMode=center" alt="A picture for a friend">
-        </a>
-        <div class = "desc">Pilt sõbrannale, 2018 aasta</div>
-    </div>
-
-    <div class = "Gallery">
-        <a target="_blank" href = "https://db3pap005files.storage.live.com/y4m9iWW6-ZIJZP-641fFd_nIg_0uvCXCD0wfs-sK1AF5zi9bp6Ok8u6fDZ4C-gl5Y0XYgzKOc0jJx-4d0-fTdGQEUkqiqxtTWxhon1PaAg9usrDBv8c41BFzKKEbl9TO9zlAvGu4jeEryhWhE4sCUeCDLhAEbuwBynqrQ-grRmuzXIzvgSmu26_oUCJR-xfw8uOegwBcUqzjc22Mw8Ve0NZSA/Pilt%20s%C3%B5brannale%2C%202019%20aasta.jpg?psid=1&width=704&height=681" width="600" height="400">
-            <img src= "https://db3pap005files.storage.live.com/y4m9iWW6-ZIJZP-641fFd_nIg_0uvCXCD0wfs-sK1AF5zi9bp6Ok8u6fDZ4C-gl5Y0XYgzKOc0jJx-4d0-fTdGQEUkqiqxtTWxhon1PaAg9usrDBv8c41BFzKKEbl9TO9zlAvGu4jeEryhWhE4sCUeCDLhAEbuwBynqrQ-grRmuzXIzvgSmu26_oUCJR-xfw8uOegwBcUqzjc22Mw8Ve0NZSA/Pilt%20s%C3%B5brannale%2C%202019%20aasta.jpg?psid=1&width=704&height=681" alt="A picture for a friend">
-        </a>
-        <div class = "desc">Pilt sõbrannale, 2019 aasta</div>
-    </div>
-
-
-
-    <div class = "Gallery">
-        <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mXJi2iZZFwqP8KbNDCOgsgyTlFiTx6fI-T_h6EjAmtlV8q0MDCD5Z6t9VZew426iVoE3ucs_ioqYw3Ld5kfyiNKiwRkGUnYYPEfrEzXL1BwEqCiSmvkdCjr4WOYS4WRHcoEJ0BSQ-giwMBvOrwdaXQ1w8akHq07Xkg8moHXW5fDlGrZTmse6SrZBkzRioI3-fXjV6Z98mqDtN0act2HUxRA/S%C3%BCnnip%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202020%20august.jpg?psid=1&width=980&height=766" width="600" height="400">
-            <img src= "https://db3pap005files.storage.live.com/y4mXJi2iZZFwqP8KbNDCOgsgyTlFiTx6fI-T_h6EjAmtlV8q0MDCD5Z6t9VZew426iVoE3ucs_ioqYw3Ld5kfyiNKiwRkGUnYYPEfrEzXL1BwEqCiSmvkdCjr4WOYS4WRHcoEJ0BSQ-giwMBvOrwdaXQ1w8akHq07Xkg8moHXW5fDlGrZTmse6SrZBkzRioI3-fXjV6Z98mqDtN0act2HUxRA/S%C3%BCnnip%C3%A4evakaart%20v%C3%A4rvipliiatsitega%2C%202020%20august.jpg?psid=1&width=980&height=766" alt="Birthday card">
-        </a>
-        <div class = "desc">Sünnipäevakaart värvipliiatsitega, 2020 august</div>
-    </div>
-
-    <div class = "Gallery">
-        <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mTzsD0l6YiAZTPh1MD_q9TDYIV5BosA4GDMLkn-HE65y7RFyt42qQ8uO6FioSYV0CfDRkJvpydPV1Ecg0qqiPApDvQ998v6o3iJcOV1jPn1-sNSVvSZ7SkDdbs-mQCCOO-wkL4UoIqyvTxhSYD31Okt7M_hXYviywlRG7lMiQC29IKy7kiLPh_W4x4t06NXRZ4GarQ8plvziAp50AI_9AYg/S%C3%BCnnip%C3%A4evakaart%20vesiv%C3%A4rvidega%2C%202020%20juuli.jpg?psid=1&width=766&height=766&cropMode=center" width="600" height="400">
-            <img src= "https://db3pap005files.storage.live.com/y4mTzsD0l6YiAZTPh1MD_q9TDYIV5BosA4GDMLkn-HE65y7RFyt42qQ8uO6FioSYV0CfDRkJvpydPV1Ecg0qqiPApDvQ998v6o3iJcOV1jPn1-sNSVvSZ7SkDdbs-mQCCOO-wkL4UoIqyvTxhSYD31Okt7M_hXYviywlRG7lMiQC29IKy7kiLPh_W4x4t06NXRZ4GarQ8plvziAp50AI_9AYg/S%C3%BCnnip%C3%A4evakaart%20vesiv%C3%A4rvidega%2C%202020%20juuli.jpg?psid=1&width=766&height=766&cropMode=center" alt="Birthday card">
-        </a>
-        <div class = "desc">Sünnipäevakaart vesivärvidega, 2020 juuli</div>
-    </div>
-
-    <div class = "Gallery">
-        <a target="_blank" href = "https://db3pap005files.storage.live.com/y4muVlZsfg1vsigWlTvGuxYyE-T0tZiQOW32MqxjbIafVhJury_GGcFhEAtvhxLDHYNNxpNwGZyOcxbUtBV3LcqgJqdfgVYzK70HP__zqJxntoFNFZnPBdSWZl-p2WHgRyRi9tH_28ULJkp2elLXZ4WSrlZcc5qJrnKNbtPF0e7JmLe6glfSXq5IUatJjtWF-BLw5lZBZxMciXquxwrDNlkxA/Vesiv%C3%A4rvidega%20tehtud%20pilt%20s%C3%B5brast%2C%202020%20aasta.jpg?psid=1&width=766&height=766&cropMode=center" width="600" height="400">
-            <img src= "https://db3pap005files.storage.live.com/y4muVlZsfg1vsigWlTvGuxYyE-T0tZiQOW32MqxjbIafVhJury_GGcFhEAtvhxLDHYNNxpNwGZyOcxbUtBV3LcqgJqdfgVYzK70HP__zqJxntoFNFZnPBdSWZl-p2WHgRyRi9tH_28ULJkp2elLXZ4WSrlZcc5qJrnKNbtPF0e7JmLe6glfSXq5IUatJjtWF-BLw5lZBZxMciXquxwrDNlkxA/Vesiv%C3%A4rvidega%20tehtud%20pilt%20s%C3%B5brast%2C%202020%20aasta.jpg?psid=1&width=766&height=766&cropMode=center" alt="A picture of a friend">
-        </a>
-        <div class = "desc">Vesivärvidega tehtud pilt sõbrast, 2020 aasta</div>
-    </div>
-
-
-    <div class = "Gallery">
-        <a target="_blank" href = "https://db3pap005files.storage.live.com/y4m2_x-2NMmDyDJ0MG5eriM-c78T-9DNL4rU4r-rLLsRH5n6nHtvaC9QPkMwdzW770bLEYCnBhcdt9XLZYb3qGrpMlZdye5OOoBdc7IcHMsnZkvfAs69ZN1pw9YdlqAWsfZf2n2VhxO17kBT6vKXeSwL1QSlCgEQkqxDpty30l1YlYFEqimtFU6cHuCN1M3pebvKtc5PMryvnOOHQGHXQrvcw/Vesiv%C3%A4rvimaal%20Kuressaare%20lossihoovist%2C%202020%20aasta.jpg?psid=1&width=967&height=725" width="600" height="400">
-            <img src= "https://db3pap005files.storage.live.com/y4m2_x-2NMmDyDJ0MG5eriM-c78T-9DNL4rU4r-rLLsRH5n6nHtvaC9QPkMwdzW770bLEYCnBhcdt9XLZYb3qGrpMlZdye5OOoBdc7IcHMsnZkvfAs69ZN1pw9YdlqAWsfZf2n2VhxO17kBT6vKXeSwL1QSlCgEQkqxDpty30l1YlYFEqimtFU6cHuCN1M3pebvKtc5PMryvnOOHQGHXQrvcw/Vesiv%C3%A4rvimaal%20Kuressaare%20lossihoovist%2C%202020%20aasta.jpg?psid=1&width=967&height=725" alt="A painting of the yard of Kuressaare Castle">
-        </a>
-        <div class = "desc">Vesivärvimaal Kuressaare lossihoovist, 2020 aasta</div>
-    </div>
-
-    <div class = "Gallery">
-        <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mTdME1Q5pdg2oz5Cd28-QCHvqMo8h9dWAiLb_C6kNypJ7WcFTzaGXO5OxaYw4fHdHzX8DaQZWTSz46vBSFggQP8Jm-oCXoyRzAVSCx3jHcIy36KJGHDnFacNjxjH4oO45TinvGr9bEaig8KVDlBu_fB-zAyNvEjiCl0jdDKjum4Eu7mt1lkoLQfHrW8GBCX-rFESpA5eVk9DXDAkgIFDpew/Vesiv%C3%A4rvimaal%20mere%20%C3%A4%C3%A4res%2C%202020%20aasta.jpg?psid=1&width=1018&height=766" width="600" height="400">
-            <img src= "https://db3pap005files.storage.live.com/y4mTdME1Q5pdg2oz5Cd28-QCHvqMo8h9dWAiLb_C6kNypJ7WcFTzaGXO5OxaYw4fHdHzX8DaQZWTSz46vBSFggQP8Jm-oCXoyRzAVSCx3jHcIy36KJGHDnFacNjxjH4oO45TinvGr9bEaig8KVDlBu_fB-zAyNvEjiCl0jdDKjum4Eu7mt1lkoLQfHrW8GBCX-rFESpA5eVk9DXDAkgIFDpew/Vesiv%C3%A4rvimaal%20mere%20%C3%A4%C3%A4res%2C%202020%20aasta.jpg?psid=1&width=1018&height=766" alt="A painting on the seashore">
-        </a>
-        <div class = "desc">Vesivärvimaal mere ääres, 2020 aasta</div>
-    </div>
-
-    <div class = "Gallery">
-        <a target="_blank" href = "https://db3pap005files.storage.live.com/y4mEm9moj3YgCjJcl3sbC5SOJqYqAGN_Asm7sWFxnghrfCvU5TZ6TX-Ob6W16fgEggjWoWMmHJXbAgYH7CVQGxLozZIDvEbsIpMN5UWAACGJgfd1G2sFK6yD38EiRE6BIxuSErFd7NKNgOZkRuWbLOTqc8k4IgofL94NWvQA7qTNbH5w1MLMc0j1YUnEXbRksQi6otM46Hk_6yaTpxZu069IQ/Akr%C3%BC%C3%BClv%C3%A4rvidega%20maalitud%20lilled%2C%202020%20aasta.jpg?psid=1&width=1211&height=681" width="600" height="400">
-            <img src= "https://db3pap005files.storage.live.com/y4mEm9moj3YgCjJcl3sbC5SOJqYqAGN_Asm7sWFxnghrfCvU5TZ6TX-Ob6W16fgEggjWoWMmHJXbAgYH7CVQGxLozZIDvEbsIpMN5UWAACGJgfd1G2sFK6yD38EiRE6BIxuSErFd7NKNgOZkRuWbLOTqc8k4IgofL94NWvQA7qTNbH5w1MLMc0j1YUnEXbRksQi6otM46Hk_6yaTpxZu069IQ/Akr%C3%BC%C3%BClv%C3%A4rvidega%20maalitud%20lilled%2C%202020%20aasta.jpg?psid=1&width=1211&height=681" alt="Painting of flowers">
-        </a>
-        <div class = "desc">Akrüülvärvidega maalitud lilled, 2020 aasta</div>
-    </div>
-</div>
-<br>
-<br>
-<br>
-<div class = "quote">
-<script>
-    writeRandomQuote();
-</script>
-</div>
-
-</body>
+    </body>
 </html>
