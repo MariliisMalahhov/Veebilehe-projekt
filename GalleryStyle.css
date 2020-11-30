@@ -1,0 +1,95 @@
+
+.button {
+    background-color: aliceblue;
+    border: solid medium rgb(226, 43, 211);
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	position: relative;
+	left: 30 px;
+	border-radius: 10px;
+}
+
+h1 {
+	color: #F0FFF0;
+	text-align: center;
+	font-size: 50px;
+}
+
+body {
+    background-image: url("Heleni_taustapilt.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+div.Gallery {
+	margin: 5px;
+	#border: 1px solid #ccc;
+	float: left;
+	width:  100px;
+	height: 100px;
+	object-fit: cover;
+  	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	font-family: verdana;
+}
+
+div.Gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.Images {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto;
+	grid-gap: 10px;
+	row-gap: 170px;
+	background-color: aliceblue;
+	padding: 50px;
+
+}
+ 
+div.Images > div {
+	text-align: center;
+	font-size: 10px;
+}
+
+
+div.desc {
+  padding: 0px;
+  text-align: center;
+  font-family: Arial;
+}
+
+
+.quote {
+    font-family: Lucida Console;
+    font-size: 28px;
+    color: midnightblue;
+	text-align: center;
+}
+
+
+
+
+
+div.Gallery:hover {
+	border: 1px solid #777;
+	transform:scale(3);
+}
+
+
+
+
+
+
+
