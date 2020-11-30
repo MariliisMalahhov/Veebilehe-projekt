@@ -1,0 +1,29 @@
+.Valge-kast {
+    width: 500px;
+    height: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+    border: solid medium rgb(226, 43, 211);
+    border-radius: 10px;
+    position: absolute;
+    left: 30%;
+    bottom: 0%;
+}
+
+p#nimi{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+p#kontakt_facebook {
+    text-align: center;
+}
+
+p#kontakt_instagram {
+    text-align: center;
+}
+
+p#kontakt_email {
+    text-align: center;
+}
